@@ -1,0 +1,193 @@
+/* styles.css */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	line-height: 1.6;
+}
+
+.footer {
+	padding: 20px;
+	background: #333;
+	color: #fff;
+	text-align: center;
+}
+
+.tabs {
+	margin: 20px;
+}
+
+.tabs__menu {
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 10px;
+	border-bottom: 2px solid #ccc;
+}
+
+.tabs__item {
+	padding: 10px;
+	cursor: pointer;
+}
+
+.tabs__item--active {
+	border-bottom: 2px solid green;
+	font-weight: bold;
+}
+
+.tabs__panel {
+	display: none;
+}
+
+.tabs__panel--active {
+	display: block;
+}
+
+.products {
+	margin: 20px;
+}
+
+.product-card {
+	text-align: center;
+	padding: 20px;
+	background: #fff;
+	border-radius: 5px;
+	margin: 10px;
+}
+
+.product-card__image {
+	max-width: 100%;
+	height: auto;
+}
+
+.product-card__title {
+	font-size: 1.2em;
+	margin: 10px 0;
+}
+
+.product-card__subtitle {
+	color: #89817f;
+}
+
+.product-card__price {
+	color: black;
+	font-weight: bold;
+}
+
+span {
+	color: #a69895;
+}
+
+/* Стили для Swiper */
+.swiper {
+	width: 100%;
+	height: auto;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+	color: #000;
+}
+
+@media (max-width: 768px) {
+	.tabs__menu {
+		flex-direction: column;
+	}
+}
+
+.table-container {
+	display: flex;
+	gap: 103px; /* Расстояние между таблицами */
+	max-width: 1200px;
+	flex-wrap: wrap;
+	margin-bottom: 270px;
+}
+table {
+	width: 300px;
+	border-collapse: collapse;
+	border: 1px solid #ccc;
+	margin: 0;
+}
+th,
+td {
+	padding: 15px;
+	text-align: left;
+	border: 1px solid #ccc;
+}
+th {
+	background-color: #f8f8f8;
+}
+.center {
+	text-align: center;
+}
+.bottom-shadow::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 20px;
+	background: linear-gradient(
+		to top,
+		rgba(245, 245, 245, 1),
+		rgba(245, 245, 245, 0)
+	);
+}
+.bottom-shadow::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 20px;
+	background: linear-gradient(
+		to top,
+		rgba(245, 245, 245, 1),
+		rgba(245, 245, 245, 0)
+	);
+}
+
+.center {
+	text-align: center;
+}
+
+.cart {
+	float: right;
+}
+
+.like {
+	position: absolute;
+	top: 30px;
+	right: 90px;
+}
+
+.tabs__button {
+	margin-top: 30px;
+	width: 324px;
+	height: 59px;
+	background-color: rgb(13, 151, 13);
+	border-radius: 10px;
+	color: #fff;
+	font-weight: 700;
+}
+
+.tabs__text {
+	margin-bottom: 17px;
+}
+
+.tubs__title {
+	margin-bottom: 17px;
+}
+
+.tabs__info {
+	float: left;
+	width: 164px;
+	height: 36px;
+	background-color: #fff;
+	color: #043e44;
+	font-weight: 700;
+	border-radius: 10px;
+}
